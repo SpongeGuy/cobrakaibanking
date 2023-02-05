@@ -1,8 +1,8 @@
 | Name  | Role |
 | ------------- |:-------------:|
-| Haley Abel    | employee 1 |
-| Evan Cropper      | employee 2  |
-| Joseph Roberts     | employee 3    |
+| Haley Abel    | Optimization/polish |
+| Evan Cropper      | Leader/GUI  |
+| Joseph Roberts     | Main Functionality    |
 
 ## Description
 
