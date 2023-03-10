@@ -1,0 +1,15 @@
+{% extends "main/header.html" %}
+<link rel="stylesheet" href="/app/website/static/css/styles.css">
+<!--Register--> 
+<div class="container py-5">
+	<h2>Register</h2>
+	<form method="POST">
+		{% csrf_token %}
+		{{ register_form|crispy }}                    
+		<button class="btn btn-primary" type="submit">Register</button>
+	</form>
+	<p class="text-center">If you already have an account, <a href="/app/website/login.html">login</a> instead.</p>
+</div>
+
+{% endblock %}
+</html>
