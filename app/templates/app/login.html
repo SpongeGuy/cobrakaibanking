@@ -1,32 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <link rel="stylesheet" href="/app/website/static/css/styles.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <title>Cobra Kai Banking : Login</title>
-</head>
-
-<body>
-  <h1>
-    <img src="logo.png" width="600" height="200">
-</h1>
-  <nav>
-    <ul>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="accounts.html">Accounts</a>
-      </li>
-      <li>
-        <a href="planning.html">Planning</a>
-      </li>
-      <li>
-        <a href="service.html">Services</a>
-      </li>
-    </ul>
-  </nav>
+{% extends 'app/base.html' %}
+    {% block content %}
   <br><br><br>
   <div class="container">
     <form action="/app/website/profile.html">
@@ -56,3 +29,4 @@
 </body>
 
 </html>
+{% endblock %}
