@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Cobra Kai Banking</title>
+<link rel="stylesheet" href={% static "css/styles.css" %}>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+    <body>
+        <h1>
+            <img src={% static "logo.png" %} width="600" height="200">
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href= '/home' >Home</a>
+                </li>
+                <li>
+                    <a href="/accounts">Accounts</a>
+                </li>
+                <li>
+                    <a href="/planning">Planning</a>
+                </li>
+                <li>
+                    <a href="/service">Services</a>
+                </li>
+                <li>
+                    <a href="/register" class="split">Login</a>
+                </li>
+            </ul>
+            </nav>
+        {% block content %} 
+        {% endblock %}
+    </body>
+</html>

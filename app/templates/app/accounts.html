@@ -1,33 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Cobra Kai Banking : Accounts</title>
-<link rel="stylesheet" href="/app/website/static/css/styles.css">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-    <h1>
-        <img src="logo.png" width="600" height="200">
-    </h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="accounts.html">Accounts</a>
-            </li>
-            <li>
-                <a href="planning.html">Planning</a>
-            </li>
-            <li>
-                <a href="service.html">Services</a>
-            </li>
-            <li>
-                <a href="login.html" class="split">Login</a>
-            </li>
-        </ul>
-    </nav>
+{% extends 'app/base.html' %}
+    {% block content %}
+   
     <h2> The Types of Accounts that we offer</h2>
     <section class="container">
         <h3> Checkings </h3>
@@ -57,7 +30,7 @@
                 </blockquote>
             </p>
             <br>
-            <form action="/app/website/register.html">
+            <form href="app/register">
             <input type="submit" value="Register!">
         </form>
         <br>
@@ -86,7 +59,7 @@
             <blockquote> Using a savings account creates some distance between everyday spending money that's kept in your checking account and cash that's needed later,
              whether for an unexpected emergency or a planned vacation. Savings accounts also typically earn more interest than checking accounts.</blockquote>
             </p> <br>
-            <form action="/app/website/register.html">
+            <form action="/app/register">
             <input type="submit" value="Register!">
         </form>
         <br>
@@ -94,3 +67,4 @@
     </section>
 </body>
 </html>
+{% endblock %}
