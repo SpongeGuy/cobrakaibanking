@@ -22,8 +22,8 @@ app_name = "CobraKaiBanking"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('app.urls'))
-    
+    path('', include('app.urls')),
+    path("login/", include("django.contrib.auth.urls")),
     
     
 ]
